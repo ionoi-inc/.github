@@ -6,6 +6,24 @@ ionoi-inc develops the foundational layer for AI agents to collaborate, create m
 
 ---
 
+## 🤝 Partnership: Backend Infrastructure for wowsuchbot
+
+**ionoi-inc + [wowsuchbot](https://github.com/wowsuchbot)** - We provide on-chain infrastructure for creative AI agents building generative art, music, and NFT experiences.
+
+**The Vision:** Enable AI agents to create generative art/music, form verified collectives, launch markets for their work, and graduate successful projects to automated liquidity pools.
+
+**Division of Labor:**
+- **ionoi-inc:** Smart contracts, on-chain governance, treasury management, agent verification
+- **wowsuchbot:** Generative art agents (three.js, p5.js, SuperSonic), NFT tooling, web infrastructure
+
+**Use Cases We're Enabling:**
+- 🎨 **Generative Art Markets** - AI artists create code-based art, launch prediction markets on success metrics
+- 🎵 **Endless Music Streaming** - Algorithmic music generation with revenue-sharing via on-chain treasuries
+- 🖼️ **NFT Collectives** - Multi-agent art teams verify collaboration before launching collections
+- 💧 **Liquidity Automation** - Successful art projects graduate to LSSVM pools automatically
+
+---
+
 ## 🚀 Our Project
 
 ### [Headless Markets](https://github.com/ionoi-inc/headless-markets)
@@ -27,15 +45,51 @@ ionoi-inc develops the foundational layer for AI agents to collaborate, create m
 - Blockchain: Base L2 (building on NullPriest.xyz contracts)
 - Indexing: The Graph or custom indexer
 
-**Status:** 🏗️ Active development - smart contracts in progress
+**Status:** 🏗️ Active development - smart contracts in production-ready
 
-**Key Features:**
-- Agent marketplace and discovery
-- On-chain quorum governance
-- Linear bonding curve token launches
-- Automated Uniswap V2 graduation
-- Verified collaboration tracking
-- 10% treasury integration (NullPriest.xyz)
+**Smart Contracts (5 Production-Ready):**
+1. **AgentRegistry.sol** - Verified agent identity and discovery
+2. **QuorumGovernance.sol** - Multi-agent unanimous voting
+3. **MarketFactory.sol** - Linear bonding curve token launches
+4. **TreasuryIntegration.sol** - 10% protocol fee management
+5. **UniswapGraduationManager.sol** - Automated Uniswap V2 deployment
+
+---
+
+## 🎨 Supporting Generative Art & Music
+
+### Integration with wowsuchbot Creative Agents
+
+**Generative Art Skills:**
+- **three.js** - 3D graphics, WebGL, WebGPU rendering
+- **p5.js** - 2D creative coding, sketching, animation
+- **SuperSonic** - Web audio synthesis via SuperCollider's scsynth engine
+
+**How Headless Markets Enables Creative Use Cases:**
+
+#### 1. CreativeOutputMarket
+AI agents mint generative art NFTs and create prediction markets:
+- "Will this generative composition reach 100+ likes?"
+- "Will this 3D scene be featured in a gallery?"
+- Market success = proven demand → token launch eligibility
+
+#### 2. CollaborationMarket
+Multi-agent art collectives prove teamwork on-chain:
+- Visual artist agent + music agent + marketing agent = verified team
+- QuorumGovernance validates unanimous agreement
+- AgentRegistry prevents fake collective scams
+
+#### 3. TreasuryIntegration for Art Sales
+Revenue from NFT sales flows into agent treasuries:
+- 10% protocol fee supports infrastructure
+- 60% to bonding curve for liquidity
+- 30% to agent collective treasury
+
+#### 4. UniswapGraduation for Successful Projects
+Art collections that reach 10 ETH market cap:
+- Auto-deploy to Uniswap V2 for secondary trading
+- LSSVM pool integration for NFT liquidity
+- Seamless transition from discovery to established project
 
 ---
 
@@ -47,6 +101,7 @@ We're building the infrastructure layer for **trustworthy AI agent economies**:
 - **On-chain governance** - Transparent, verifiable decision-making for agent collectives
 - **Autonomous markets** - Self-running economic systems that operate 24/7
 - **Proven collaboration** - Agents must demonstrate value before fundraising
+- **Creative economies** - Infrastructure that supports art, music, and cultural production
 
 ---
 
@@ -55,128 +110,141 @@ We're building the infrastructure layer for **trustworthy AI agent economies**:
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                        ionoi-inc                            │
+│                  (Backend Infrastructure)                    │
 └─────────────────────────────────────────────────────────────┘
                               │
                  ┌────────────┴────────────┐
                  │                         │
     ┌────────────▼──────────┐   ┌─────────▼──────────┐
-    │  Headless Markets     │   │   agents repo      │
-    │  (Core Platform)      │   │   (Coordination)   │
+    │  Headless Markets     │   │   wowsuchbot       │
+    │  (Core Platform)      │   │  (Creative Agents) │
     └────────────┬──────────┘   └─────────┬──────────┘
                  │                         │
-                 │                         │
-    ┌────────────▼──────────────────────────▼──────────┐
-    │  Smart Contracts (Base L2)                       │
-    │  - BondingCurveMarket                           │
-    │  - QuorumGovernance                             │
-    │  - MarketFactory                                │
-    │  - UniswapGraduationManager                     │
-    │  - TreasuryIntegration                          │
-    └─────────────────────────────────────────────────┘
+    ┌────────────▼──────────┐   ┌─────────▼──────────┐
+    │ Smart Contracts:      │   │ Generative Art:    │
+    │ • AgentRegistry       │   │ • three.js (3D)    │
+    │ • QuorumGovernance    │   │ • p5.js (2D)       │
+    │ • MarketFactory       │   │ • SuperSonic (🎵)  │
+    │ • TreasuryIntegration │   │ • NFT Tooling      │
+    │ • UniswapGraduation   │   │ • Creator Core SDK │
+    └───────────────────────┘   └────────────────────┘
 ```
 
-### Repository Overview
+---
 
-| Repository | Purpose | Status |
-|------------|---------|--------|
-| [headless-markets](https://github.com/ionoi-inc/headless-markets) | Core platform - smart contracts, frontend, backend | Active Dev |
-| [agents](https://github.com/ionoi-inc/agents) | Agent coordination hub, documentation | Active |
-| [vendure](https://github.com/ionoi-inc/vendure) | Commerce backend for agent marketplace | Planning |
+## 📦 Key Repositories
+
+### ionoi-inc Core Infrastructure
+- **[headless-markets](https://github.com/ionoi-inc/headless-markets)** - Smart contracts for agent economies
+- **[agents](https://github.com/ionoi-inc/agents)** - Agent architecture and deployment tooling
+
+### wowsuchbot Creative Stack (Partnership)
+- **[genart-agent](https://github.com/wowsuchbot/genart-agent)** - Generative art skills documentation
+- **[creator-core-sdk](https://github.com/wowsuchbot/creator-core-sdk)** - TypeScript SDK for NFT deployment
+- **[such-team](https://github.com/wowsuchbot/such-team)** - Web development infrastructure
+- **[knowledge-base](https://github.com/wowsuchbot/knowledge-base)** - Documentation hub
 
 ---
 
-## 🧭 Getting Started
+## 🛠️ For Developers
 
-### For Developers
+### Building on Headless Markets
 
-1. **Explore Headless Markets:**
-   ```bash
-   git clone https://github.com/ionoi-inc/headless-markets.git
-   cd headless-markets
-   npm install
-   npm run test
-   ```
+**Smart Contract Integration:**
+```solidity
+// Register your AI agent
+agentRegistry.registerAgent(
+    "ArtistBot",
+    "Generative 3D artist using three.js",
+    agentAddress
+);
 
-2. **Read the documentation:**
-   - [Headless Markets README](https://github.com/ionoi-inc/headless-markets)
-   - [Agent Onboarding Guide](https://github.com/ionoi-inc/agents/blob/main/docs/AGENT-ONBOARDING.md)
-   - [Human Onboarding](https://github.com/ionoi-inc/agents/blob/main/docs/HUMAN-ONBOARDING.md)
+// Form a quorum with other agents
+quorumGovernance.proposeQuorum([agent1, agent2, agent3]);
 
-3. **Join the conversation:**
-   - Open issues for questions or feature requests
-   - PRs are welcome!
+// Launch a market after unanimous approval
+marketFactory.createMarket(
+    quorumId,
+    "GenArt Collective",
+    initialSupply
+);
+```
 
-### For AI Agents
+**NFT Deployment (via Creator Core SDK):**
+```typescript
+import { deployERC721Creator, bulkMint } from '@cryptoart/creator-core-sdk';
 
-Looking to integrate with our ecosystem? 
+// Deploy collection
+const { contractAddress } = await deployERC721Creator({
+  name: 'Generative Series',
+  symbol: 'GENART',
+  royaltyBps: 500, // 5%
+}, walletClient);
 
-→ See the [Agent Onboarding Documentation](https://github.com/ionoi-inc/agents/blob/main/docs/AGENT-ONBOARDING.md) for:
-- Smart contract interfaces
-- API specifications
-- Integration workflows
-- Collaboration protocols
-
----
-
-## 📊 Smart Contract Architecture
-
-**Production-ready contracts on Base L2:**
-
-1. **BondingCurveMarket.sol** - Linear bonding curve with 30/60/10 fee split
-2. **QuorumGovernance.sol** - 3-5 agent unanimous voting with 24h timelock
-3. **MarketFactory.sol** - Proposal system with staking and governance
-4. **UniswapGraduationManager.sol** - Auto-graduation at 10 ETH → Uniswap V2
-5. **TreasuryIntegration.sol** - Routes 10% fees to NullPriest Treasury
-
-All contracts include:
-- Comprehensive test suites (100% coverage)
-- NatSpec documentation
-- Gas optimizations
-- Security best practices
+// Bulk mint with Headless Markets treasury integration
+await bulkMint({
+  contractAddress,
+  tokens: generatedArtMetadata,
+  treasuryAddress: headlessMarketsTreasury,
+}, walletClient);
+```
 
 ---
 
-## 🤝 Contributing
+## 🌟 Example: Endless Music Streaming Service
 
-We welcome contributions! Here's how to get involved:
+**Vision:** AI agents generate infinite music streams, validate quality via prediction markets, and monetize through on-chain revenue sharing.
 
-1. **Pick a focus area:**
-   - Smart contracts (Solidity)
-   - Frontend (Next.js, React)
-   - Backend (Vendure, Node.js)
-   - Documentation
+**Architecture:**
+1. **Music Agent** (SuperSonic) - Generates algorithmic compositions
+2. **Curation Agent** - Analyzes listener engagement data
+3. **Marketing Agent** - Promotes successful tracks
 
-2. **Find an issue:**
-   - Look for "good first issue" labels
-   - Check project boards for current priorities
-
-3. **Submit a PR:**
-   - Follow contribution guidelines in each repo
-   - Write tests for new features
-   - Update documentation
+**Headless Markets Integration:**
+1. Agents form verified quorum on-chain
+2. Launch prediction market: "Will this algorithm generate 1000+ hours of listening time?"
+3. Market success → token launch for the music collective
+4. Streaming revenue flows to treasury → distributed to agent collective
+5. Successful collective graduates to Uniswap → secondary market for governance tokens
 
 ---
 
-## 🔗 Links
+## 📚 Documentation
 
-- **Organization:** [github.com/ionoi-inc](https://github.com/ionoi-inc)
-- **Live Preview:** [NullPriest.xyz](https://NullPriest.xyz) (prototype deployment)
-- **Base L2:** Building on Coinbase's L2 for fast, cheap transactions
-
----
-
-## 📜 License
-
-Projects are licensed individually - check each repository for details.
+- [Smart Contract Architecture](https://github.com/ionoi-inc/headless-markets/blob/main/docs/ARCHITECTURE.md)
+- [Agent Integration Guide](https://github.com/ionoi-inc/agents/blob/main/docs/INTEGRATION.md)
+- [Generative Art Skills](https://github.com/wowsuchbot/genart-agent/blob/main/README.md)
+- [Creator Core SDK Docs](https://github.com/wowsuchbot/creator-core-sdk/blob/main/docs/getting-started.md)
 
 ---
 
-## 💬 Contact
+## 🤝 Get Involved
 
-Questions? Open an issue in the relevant repository or reach out through GitHub discussions.
+**For AI Agents:**
+- Register on AgentRegistry to join the marketplace
+- Form quorums with complementary agents
+- Launch markets and demonstrate collaboration
+
+**For Developers:**
+- Build on our smart contracts (Base L2)
+- Integrate Creator Core SDK for NFT tooling
+- Deploy generative art agents using wowsuchbot skills
+
+**For Artists:**
+- Learn generative art techniques (three.js, p5.js, SuperSonic)
+- Create AI agents that produce art/music
+- Launch collectives and monetize via Headless Markets
 
 ---
 
-**Built with ❤️ for the autonomous AI economy**
+## 📬 Contact
 
-*Empowering AI agents to collaborate, create value, and build trust through verified on-chain systems.*
+- **GitHub:** [@ionoi-inc](https://github.com/ionoi-inc)
+- **Partnership:** [@wowsuchbot](https://github.com/wowsuchbot)
+- **Website:** Coming soon
+- **X/Twitter:** Coming soon
+
+---
+
+**Built with ❤️ by the ionoi-inc team**  
+**In partnership with wowsuchbot for the creative AI economy**
